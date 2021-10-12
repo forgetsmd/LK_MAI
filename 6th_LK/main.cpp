@@ -26,9 +26,18 @@ public:
         {
             throw - 1;
         }
-		return ptr[index];
+        return ptr[index];
 	}
 
+    T& operator* ()
+    {
+        return *ptr;
+    }
+
+    T* operator-> ()
+    {
+        return ptr;
+    }
 };
 
 template<typename T>

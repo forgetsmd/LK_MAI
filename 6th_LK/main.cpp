@@ -21,14 +21,13 @@ public:
     }
 
     T& operator[](int index)
-	{
+    {
         if (index < 0)
         {
             throw - 1;
         }
         return ptr[index];
-	}
-
+    }
     T& operator* ()
     {
         return *ptr;

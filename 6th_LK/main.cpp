@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -19,16 +18,6 @@ public:
     ~SP()
     {
         delete[] ptr;
-    }
-
-    T& operator* ()
-    {
-        return *ptr;
-    }
-
-    T* operator-> ()
-    {
-        return ptr;
     }
 
     T& operator[](int index)
